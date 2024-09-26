@@ -1,51 +1,98 @@
 {
-  "config": {
-      "byzantiumBlock": 0,
-      "chainId": 10101,
-      "constantinopleBlock": 0,
-      "eip150Block": 0,
-      "eip155Block": 0,
-      "eip158Block": 0,
-      "feeConfig": {
-          "gasLimit": 12000000,
-          "targetBlockRate": 2,
-          "minBaseFee": 25000000000,
-          "targetGas": 60000000,
-          "baseFeeChangeDenominator": 36,
-          "minBlockGasCost": 0,
-          "maxBlockGasCost": 1000000,
-          "blockGasCostStep": 200000
-      },
-      "homesteadBlock": 0,
-      "istanbulBlock": 0,
-      "muirGlacierBlock": 0,
-      "petersburgBlock": 0,
-      "warpConfig": {
-          "blockTimestamp": 1727269275,
-          "quorumNumerator": 67
-      }
-  },
-  "nonce": "0x0",
-  "timestamp": "0x66f4099b",
-  "extraData": "0x",
-  "gasLimit": "0xb71b00",
-  "difficulty": "0x0",
-  "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-  "coinbase": "0x0000000000000000000000000000000000000000",
-  "alloc": {
-      "55b21b26f421015bc322bcd833226c695b2e1d41": {
-          "balance": "0x2086ac351052600000"
-      },
-      "8db97c7cece249c2b98bdc0226cc4c2a57bf52fc": {
-          "balance": "0xd3c21bcecceda1000000"
-      }
-  },
-  "airdropHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-  "airdropAmount": null,
-  "number": "0x0",
-  "gasUsed": "0x0",
-  "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-  "baseFeePerGas": null,
-  "excessBlobGas": null,
-  "blobGasUsed": null
+    "config": {
+        "byzantiumBlock": 0,
+        "chainId": 10101,
+        "constantinopleBlock": 0,
+        "contractDeployerAllowListConfig": {
+            "adminAddresses": [
+                "0xc59240ad0483a684f4e7a67c5db7e7ca57720ab7"
+            ],
+            "enabledAddresses": [
+                "0xe2c4df31b82535600649ccbd94004dbc636a14a1",
+                "0x55b21b26f421015bc322bcd833226c695b2e1d41",
+                "0x618fedd9a45a8c456812ecaae70c671c6249dfac"
+            ],
+            "blockTimestamp": 1727356340
+        },
+        "eip150Block": 0,
+        "eip155Block": 0,
+        "eip158Block": 0,
+        "feeConfig": {
+            "gasLimit": 15000000,
+            "targetBlockRate": 2,
+            "minBaseFee": 25000000000,
+            "targetGas": 45000000,
+            "baseFeeChangeDenominator": 36,
+            "minBlockGasCost": 0,
+            "maxBlockGasCost": 1000000,
+            "blockGasCostStep": 200000
+        },
+        "feeManagerConfig": {
+            "adminAddresses": [
+                "0xc59240ad0483a684f4e7a67c5db7e7ca57720ab7"
+            ],
+            "blockTimestamp": 1727356340
+        },
+        "homesteadBlock": 0,
+        "istanbulBlock": 0,
+        "muirGlacierBlock": 0,
+        "petersburgBlock": 0,
+        "rewardManagerConfig": {
+            "adminAddresses": [
+                "0xc59240ad0483a684f4e7a67c5db7e7ca57720ab7"
+            ],
+            "blockTimestamp": 1727356340
+        },
+        "txAllowListConfig": {
+            "adminAddresses": [
+                "0xc59240ad0483a684f4e7a67c5db7e7ca57720ab7"
+            ],
+            "enabledAddresses": [
+                "0x96b0f9395b1a964b4168acf28243fbd23281a3ef",
+                "0x55b21b26f421015bc322bcd833226c695b2e1d41",
+                "0x618fedd9a45a8c456812ecaae70c671c6249dfac",
+                "0x2fd7ecf765892d407c2a8b1921bc29b3e30cfe85"
+            ],
+            "blockTimestamp": 1727356340
+        },
+        "warpConfig": {
+            "blockTimestamp": 1727356340,
+            "quorumNumerator": 67
+        }
+    },
+    "nonce": "0x0",
+    "timestamp": "0x66f55db4",
+    "extraData": "0x",
+    "gasLimit": "0xe4e1c0",
+    "difficulty": "0x0",
+    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "coinbase": "0x0000000000000000000000000000000000000000",
+    "alloc": {
+        "46f86c82a9c1ec900abb702a127b38b4b512d119": {
+            "balance": "0x3635c9adc5dea00000"
+        },
+        "55b21b26f421015bc322bcd833226c695b2e1d41": {
+            "balance": "0x2086ac351052600000"
+        },
+        "7112432ebbf866dfa01cd2b3b7a2f49bbbd95304": {
+            "balance": "0x14542ba12a337c000000"
+        },
+        "96b0f9395b1a964b4168acf28243fbd23281a3ef": {
+            "balance": "0x3635c9adc5dea00000"
+        },
+        "c59240ad0483a684f4e7a67c5db7e7ca57720ab7": {
+            "balance": "0x3635c9adc5dea00000"
+        },
+        "e2c4df31b82535600649ccbd94004dbc636a14a1": {
+            "balance": "0x3635c9adc5dea00000"
+        }
+    },
+    "airdropHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "airdropAmount": null,
+    "number": "0x0",
+    "gasUsed": "0x0",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "baseFeePerGas": null,
+    "excessBlobGas": null,
+    "blobGasUsed": null
 }
